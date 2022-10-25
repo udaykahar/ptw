@@ -1,6 +1,6 @@
 .hero-section{
     width: 100vw;
-    height: calc(100vh - 82px);
+    height: calc(100vh - 104px);
     padding: 0 5rem ;
     /* display: grid;
     place-items: center; */
@@ -9,7 +9,10 @@ body {
     background-color: #c4c4c4;
   
 }
-
+iframe{
+    width: 50vw;
+    height: 50vh;
+}
 .text {
     text-transform: uppercase;
     font-family: verdana;
@@ -28,4 +31,21 @@ body {
     1px 22px 10px rgba(16,16,16,0.2),
     1px 25px 35px rgba(16,16,16,0.2),
     1px 30px 60px rgba(16,16,16,0.4);
+}
+@media (min-width: 640px) {
+    .text {
+        font-size: 3rem !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .text {
+        font-size: 2rem !important;
+    }
+    .hero-section{
+        flex-direction: column ;
+    }
+    iframe{
+        width: 90vw;
+    }
 }
